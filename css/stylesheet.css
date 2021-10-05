@@ -1,4 +1,4 @@
-body{
+body {
     background-color: var(--site-background);
     color: var(--font-color-1);
 
@@ -9,18 +9,18 @@ body{
     font-family: 'Segoe UI';
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     height: 0;
     width: 0;
 }
 
-a{
+a {
     text-decoration: none;
     margin: 0;
     padding: 0 !important;
 }
 
-button{
+button {
     background-color: transparent;
     border: 0px;
 

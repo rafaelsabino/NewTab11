@@ -1,12 +1,12 @@
-:root{
+:root {
     --accent-color-1: rgb(143, 69, 212);
 
     --button-accent-rest: rgb(0, 120, 212);
     --button-accent-hover: rgb(38, 141, 219);
 }
 
-@media (prefers-color-scheme: light){
-    :root{
+@media (prefers-color-scheme: light) {
+    :root {
         --site-background: rgb(243, 243, 243);
         --page-background: rgb(240, 240, 240);
         --page-border: rgb(229, 229, 229);
@@ -35,8 +35,8 @@
     }
 }
 
-@media (prefers-color-scheme: dark){
-    :root{
+@media (prefers-color-scheme: dark) {
+    :root {
         --site-background: rgb(32, 32, 32);
         --page-background: rgb(39, 39, 39);
         --page-border: rgb(29, 29, 29);
@@ -60,49 +60,49 @@
         --menu-back: rgba(0, 0, 0, 0.8);
         --menu-sep: rgba(255, 255, 255, 0.1);
         --menu-btn: rgba(255, 255, 255, 0.2);
-        
+
         --button-semitransp: rgba(0, 0, 0, 0.8);
     }
 }
 
 @font-face {
     font-family: FLNTFILL;
-    src: url(fonts/fluent_filled.ttf);
+    src: url(../assets/fonts/fluent_filled.ttf);
 }
 
 @font-face {
     font-family: FLNTREG;
-    src: url(fonts/fluent_reg.ttf);
+    src: url(../assets/fonts/fluent_reg.ttf);
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.chbTab1{
-    background-image: url(boardwalkTiles/1feedly.png);
+.chbTab1 {
+    background-image: url(../assets/boardwalkTiles/1feedly.png);
 }
 
-.chbTab2{
-    background-image: url(boardwalkTiles/2twitter.png);
+.chbTab2 {
+    background-image: url(../assets/boardwalkTiles/2twitter.png);
 }
 
-.chbTab3{
-    background-image: url(boardwalkTiles/3youtube.png);
+.chbTab3 {
+    background-image: url(../assets/boardwalkTiles/3youtube.png);
 }
 
-.chbTab4{
-    background-image: url(boardwalkTiles/4reddit.png);
+.chbTab4 {
+    background-image: url(../assets/boardwalkTiles/4reddit.png);
 }
 
-.chbTab5{
-    background-image: url(boardwalkTiles/5deviantart.png);
+.chbTab5 {
+    background-image: url(../assets/boardwalkTiles/5deviantart.png);
 }
 
-.chbTab6{
-    background-image: url(boardwalkTiles/6netflix.png);
+.chbTab6 {
+    background-image: url(../assets/boardwalkTiles/6netflix.png);
 }
 
-.chbTab7{
-    background-image: url(boardwalkTiles/7apv.png);
+.chbTab7 {
+    background-image: url(../assets/boardwalkTiles/7apv.png);
 }

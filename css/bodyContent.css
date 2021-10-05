@@ -1,4 +1,4 @@
-.cLabel{
+.cLabel {
     position: absolute;
     left: 30px;
     top: 25px;
@@ -13,12 +13,12 @@
     text-shadow: 0 0 3px #000000;
 }
 
-.content{
+.content {
     position: absolute;
     box-sizing: border-box;
     right: 0;
     bottom: 0;
-    
+
     overflow: hidden;
 
     background-color: var(--page-background);
@@ -30,19 +30,19 @@
     height: calc(100vh - 50px);
 }
 
-.cSpotlight{
+.cSpotlight {
     width: 100%;
     height: 70%;
 
     position: relative;
 }
 
-.reArea{
+.reArea {
     width: 30%;
     aspect-ratio: 1/1;
 
     border-radius: 50%;
-    transform: translate(-65%,-60%);
+    transform: translate(-65%, -60%);
 
     position: absolute;
     z-index: 1;
@@ -53,7 +53,7 @@
     transition: opacity 1s;
 }
 
-.csImage{
+.csImage {
     width: 100%;
     height: 100%;
 
@@ -62,7 +62,7 @@
     mask-image: linear-gradient(to top, transparent 0%, black 15%);
 }
 
-.chBoardwalk{
+.chBoardwalk {
     scroll-behavior: smooth;
     display: flex;
     gap: 13px;
@@ -82,7 +82,7 @@
     scrollbar-width: none;
 }
 
-.chbTile{
+.chbTile {
     box-sizing: border-box;
     position: relative;
 
@@ -100,11 +100,11 @@
     transition: transform .2s;
 }
 
-.chbTile:last-of-type{
+.chbTile:last-of-type {
     margin-right: 25px;
 }
 
-.chbTile::after{
+.chbTile::after {
     content: attr(data-chbtSiteName);
 
     font-size: 12px;
@@ -122,22 +122,22 @@
     z-index: 3;
 }
 
-.chbTile:hover::after{
+.chbTile:hover::after {
     left: 15px;
     opacity: 1;
     font-size: 15px;
 }
 
-.chbTile:hover .chbGrad{
+.chbTile:hover .chbGrad {
     left: 0;
     opacity: 1;
 }
 
-.chbTile:hover{
+.chbTile:hover {
     transform: scale(1.03);
 }
 
-.chbGrad{
+.chbGrad {
     position: absolute;
     bottom: 0;
     left: -100%;
@@ -152,7 +152,7 @@
     background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, .8));
 }
 
-.chbTileIconBlur{
+.chbTileIconBlur {
     width: 100%;
     height: 100%;
 
@@ -168,7 +168,7 @@
     backdrop-filter: blur(10px);
 }
 
-.chbTileIcon{
+.chbTileIcon {
     position: relative;
     z-index: 2;
     height: 80px;
@@ -177,7 +177,7 @@
     border-radius: 8px;
 }
 
-.chbTileCustom{
+.chbTileCustom {
     background-color: #fffa;
     backdrop-filter: blur(20px);
 
@@ -186,7 +186,8 @@
     align-items: center;
     filter: drop-shadow(0px 2px 8px #0004);
 }
-.scrollBtn{
+
+.scrollBtn {
     width: 20px;
     height: 40px;
 
@@ -211,29 +212,29 @@
     transition: transform .2s;
 }
 
-.scrollBtn:hover{
+.scrollBtn:hover {
     transform: scale(1.07);
 }
 
-.sbEnd{
+.sbEnd {
     left: 80px;
 }
 
-.sbEnd::after{
+.sbEnd::after {
     content: ""
 }
 
-.sbStart{
+.sbStart {
     right: 10px;
 }
 
-.sbStart::after{
+.sbStart::after {
     content: ""
 }
 
 /* First visit experience */
 
-.firstVisitSetup{
+.firstVisitSetup {
     width: 100vw;
     height: 100vh;
 
@@ -248,25 +249,25 @@
     color: var(--font-color-2);
 }
 
-.iHead{
+.iHead {
     font-weight: 600;
     font-size: 40px;
 }
 
-.iSubhead{
+.iSubhead {
     font-size: 30px;
     opacity: .8;
 }
 
-.iSubhead2{
+.iSubhead2 {
     margin-top: 7px;
 }
 
-.fvsIntro{
+.fvsIntro {
     margin-bottom: 40px;
 }
 
-.fvsSect{
+.fvsSect {
     width: calc(100% - 8em);
     height: fit-content;
 
@@ -280,11 +281,11 @@
     gap: 5px;
 }
 
-.fvsSect .spwcsTitle{
+.fvsSect .spwcsTitle {
     font-size: 20px;
 }
 
-.fvsSect .spwcsTitle span{
+.fvsSect .spwcsTitle span {
     opacity: 1;
     display: block;
     position: unset;
@@ -295,11 +296,11 @@
     padding: 0;
 }
 
-#fsw1{
+#fsw1 {
     font-size: 15px;
 }
 
-#fsw2{
+#fsw2 {
     margin-bottom: 15px;
     margin-top: 6px;
 
@@ -308,7 +309,7 @@
 
 /* Settings Window */
 
-.settingsPanel{
+.settingsPanel {
     width: 100%;
     height: 100%;
 
@@ -320,7 +321,7 @@
     justify-content: center;
 }
 
-.spBackdrop{
+.spBackdrop {
     width: 100%;
     height: 100%;
 
@@ -334,7 +335,7 @@
     transition: opacity .1s;
 }
 
-.spWindow{
+.spWindow {
     width: 70%;
     min-width: 550px;
     max-width: 700px;
@@ -355,7 +356,7 @@
     color: var(--font-color-2)
 }
 
-.spCloseBtn{
+.spCloseBtn {
     width: 45px;
     height: 45px;
 
@@ -381,7 +382,7 @@
 
 /* Settings - Meta */
 
-.spwcAppTitle{
+.spwcAppTitle {
     font-weight: 600;
     font-size: 19px;
 
@@ -394,14 +395,14 @@
     height: 50px;
 }
 
-.spwcAppTitle p{
+.spwcAppTitle p {
     padding-left: 7px;
 
     font-size: 14px;
     opacity: .7;
 }
 
-.spwcSection{
+.spwcSection {
     width: 90%;
     height: fit-content;
 
@@ -418,7 +419,7 @@
     justify-content: flex-start;
 }
 
-.spwcsTitle{
+.spwcsTitle {
     margin-inline: 0;
     margin-block: 0;
 
@@ -429,13 +430,13 @@
 
 /* Settings - Splash Image */
 
-.siOptions{
+.siOptions {
     display: flex;
     flex-direction: column;
     margin-top: 7px;
 }
 
-#siUnsplashTags{
+#siUnsplashTags {
     width: 20ch;
     height: 20px;
 
@@ -454,19 +455,19 @@
     background-color: var(--search-back);
 }
 
-#siUnsplashTags:focus{
+#siUnsplashTags:focus {
     border-bottom: 2px solid var(--accent-color-1);
 }
 
 /* Settings - Accent Color */
 
-.accColors{
+.accColors {
     display: flex;
     gap: 5px;
     margin-top: 10px;
 }
 
-.acpSelected{
+.acpSelected {
     border: 3px solid rgb(123, 123, 123);
 }
 
@@ -491,17 +492,17 @@
     border: 2px solid transparent;
 }
 
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
     border: 2px solid var(--font-color-2);
 }
 
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
     border: 2px solid var(--font-color-2);
 }
 
 /* Settings - Personal Info */
 
-.piTextBox{
+.piTextBox {
     width: 23ch;
     height: 20px;
 
@@ -520,23 +521,23 @@
     background-color: var(--search-back);
 }
 
-.piTextBox:focus{
+.piTextBox:focus {
     border-bottom: 2px solid var(--accent-color-1);
 }
 
-.spwcsPersonalInfo .spwcsTitle{
+.spwcsPersonalInfo .spwcsTitle {
     position: relative;
     margin-bottom: 10px;
 }
 
-.spwcsPersonalInfo .spwcsTitle::after{
+.spwcsPersonalInfo .spwcsTitle::after {
     content: "";
     font-family: FLNTREG;
     opacity: .5;
     margin-left: 5px;
 }
 
-.spwcsTitle span{
+.spwcsTitle span {
     background-color: var(--button-semitransp);
     backdrop-filter: blur(8px);
 
@@ -559,12 +560,12 @@
     border-radius: 5px;
 }
 
-.spwcsTitle:hover span{
+.spwcsTitle:hover span {
     transform: scale(1);
     opacity: 1;
 }
 
-.spwcsSubtitle{
+.spwcsSubtitle {
     position: absolute;
     right: 35px;
 
@@ -577,54 +578,54 @@
     transition: opacity .2s;
 }
 
-.spwcsPersonalInfo label{
+.spwcsPersonalInfo label {
     font-size: 13px;
     font-weight: 500;
 }
 
 /* New Tile modal */
 
-.spwcsNTPrev, 
-.spwcsNTSpecs{
+.spwcsNTPrev,
+.spwcsNTSpecs {
     width: 270px !important;
     margin: 10px 15px;
 }
 
-.spwcsNTSpecs{
+.spwcsNTSpecs {
     margin-top: 0;
 }
 
-.spwcsNTPrev{
+.spwcsNTPrev {
     margin-bottom: 0;
 }
 
-#spWindowNT{
+#spWindowNT {
     min-width: 200px !important;
     width: fit-content;
     height: fit-content;
 }
 
-#ntWindowTitle{
+#ntWindowTitle {
     width: fit-content;
     height: fit-content;
     margin: 0;
     padding: 5px 20px;
 }
 
-#ntWindowClose{
+#ntWindowClose {
     right: -50px;
 }
 
-.ntTitle{
+.ntTitle {
     font-weight: 500;
     font-size: 14px;
 }
 
-.newTileName{
+.newTileName {
     margin-top: 3px;
 }
 
-.newTileTextbox{
+.newTileTextbox {
     width: 23ch;
     height: 23px;
 
@@ -643,15 +644,15 @@
     background-color: var(--search-back);
 }
 
-.newTileTextbox:focus{
+.newTileTextbox:focus {
     border-bottom: 2px solid var(--accent-color-1);
 }
 
-#ntURL{
+#ntURL {
     width: 35ch;
 }
 
-.ntActionBtn{
+.ntActionBtn {
     border: 1px solid var(--search-border);
     border-radius: 5px;
     background-color: var(--button-rest);
@@ -668,37 +669,37 @@
     transition: background-color .1s;
 }
 
-.ntActionBtn:hover{
+.ntActionBtn:hover {
     background-color: var(--button-hover);
 }
 
-.ntActionBtn::after{
+.ntActionBtn::after {
     content: attr(data-ntBtnLbl);
 }
 
-#ntCommitTile{
+#ntCommitTile {
     background-color: var(--button-accent-rest);
     color: white;
 }
 
-#ntCommitTile:hover{
+#ntCommitTile:hover {
     background-color: var(--button-accent-hover);
 }
 
-#ntCancelAdd{
+#ntCancelAdd {
     font-weight: 400;
 }
 
-.chbTilePreview{
+.chbTilePreview {
     margin-top: 10px;
 }
 
-.spwcsNTPrev span{
+.spwcsNTPrev span {
     font-size: 12px;
     margin-top: 12px;
 }
 
-.ntActionBtns{
+.ntActionBtns {
     margin-left: auto;
     margin-right: 15px;
     margin-bottom: 10px;

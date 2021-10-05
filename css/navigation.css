@@ -1,6 +1,6 @@
 /* Header navigation */
 
-.topNav{
+.topNav {
     width: 100vw;
     height: 50px;
 
@@ -9,7 +9,7 @@
 
 }
 
-.navIcon{
+.navIcon {
     height: 25px;
     aspect-ratio: 1/1;
 
@@ -19,13 +19,13 @@
     align-items: center;
     justify-content: center;
 
-    background-image: url(logos/icon48.png);
+    background-image: url(../assets/logos/icon48.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
-.navTitle{
+.navTitle {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,12 +39,12 @@
     color: var(--font-color-2);
 }
 
-.navTitle p{
+.navTitle p {
     font-size: 10px;
     opacity: .6;
 }
 
-.searchField{
+.searchField {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 10px 10px;
@@ -62,24 +62,24 @@
     color: var(--search-font-color);
 }
 
-.searchField:focus{
+.searchField:focus {
     color: var(--search-font-focus);
 
     border-bottom: 2px solid var(--accent-color-1);
 }
 
-.profile{
+.profile {
     margin-left: auto;
     padding-right: 10px;
 }
 
-.tnProfIcon{
+.tnProfIcon {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     margin-top: 5px;
 
-    background-image: url(prof.png);
+    background-image: url(../assets/user.png);
     background-size: cover;
 
     transition: transform .15s;
@@ -87,7 +87,7 @@
 
 /* Profile Menu */
 
-.profMenu{
+.profMenu {
     position: absolute;
     z-index: 100;
     right: 10px;
@@ -110,7 +110,7 @@
     transition: transform .3s, opacity .2s;
 }
 
-.pmAboutMe{
+.pmAboutMe {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--menu-sep);
 
@@ -118,37 +118,37 @@
     align-items: center;
 }
 
-.pmamProfIcon{
+.pmamProfIcon {
     width: 80px;
     height: 80px;
     border-radius: 200px;
 
-    background-image: url(prof.png);
+    background-image: url(../assets/user.png);
     background-size: contain;
 }
 
-.pmamText{
+.pmamText {
     padding-left: 10px;
     color: var(--font-color-2);
 }
 
-.ptName{
+.ptName {
     font-weight: 600;
 }
 
-.ptEmail{
+.ptEmail {
     font-size: 13px;
     opacity: .6;
 }
 
-.ptEdit{
+.ptEdit {
     padding-top: 5px;
     font-size: 12px;
     opacity: .7;
     cursor: pointer;
 }
 
-.pmSettingsBtn{
+.pmSettingsBtn {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -158,7 +158,7 @@
 
     color: var(--font-color-2);
     border-radius: 6px;
-    
+
     height: 40px;
 
     margin: 5px 0 0 0;
@@ -169,25 +169,25 @@
     user-select: none;
 }
 
-.pmSettingsBtn p{
+.pmSettingsBtn p {
     padding-left: 10px;
 
     font-family: 'Segoe UI';
     font-size: 14px;
 }
 
-.pmSettingsBtn:hover{
+.pmSettingsBtn:hover {
     background-color: var(--menu-btn);
 }
 
-.ptEdit:hover{
+.ptEdit:hover {
     text-decoration: underline;
     opacity: 1;
 }
 
 /* Sidebar navigation */
 
-.sideNav{
+.sideNav {
     width: 75px;
     height: 100vh;
     padding: 0 5px;
@@ -201,7 +201,7 @@
     gap: 2px;
 }
 
-.sbButton{
+.sbButton {
     width: 100%;
     aspect-ratio: 1/1;
     box-sizing: border-box;
@@ -225,12 +225,12 @@
     user-select: none;
 }
 
-.sbButton:hover{
+.sbButton:hover {
     background-color: var(--button-hover);
     border-top: 1px solid rgba(255, 255, 255, .06);
 }
 
-.sbbActive{
+.sbbActive {
     border-top: 1px solid rgba(255, 255, 255, .06);
     background-color: var(--button-active);
     color: var(--accent-color-1);
@@ -238,7 +238,7 @@
     font-family: FLNTFILL;
 }
 
-.sbbaInd{
+.sbbaInd {
     width: 6px;
     height: 27px;
 
@@ -252,7 +252,7 @@
     border-radius: 100px;
 }
 
-.sbbInactive{
+.sbbInactive {
     color: var(--font-color-1);
 
     transition: color .1s;
@@ -260,11 +260,11 @@
     cursor: pointer;
 }
 
-.sbbInactive:hover{
+.sbbInactive:hover {
     color: var(--font-color-2);
 }
 
-.sbbInactive::after{
+.sbbInactive::after {
     content: attr(data-sbbLabel);
 
     font-family: 'Segoe UI';
@@ -281,6 +281,6 @@
     padding-top: 3px;
 }
 
-.sbbInactive:hover::after{
+.sbbInactive:hover::after {
     height: 15px;
 }
