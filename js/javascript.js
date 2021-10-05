@@ -168,7 +168,7 @@ newTileCancelBtn.onclick = function () {
 
 searchField.onkeydown = function () {
 if (event.keyCode == 13 || event.which == 13) { 
-    location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('searchField').value);
+    location='http://www.google.ca/search?q=' + encodeURIComponent(document.getElementById('searchField').value);
 }
 }
 
@@ -272,15 +272,9 @@ document.getElementById('avatarUpload').addEventListener('change', (e) => {
       const base64String = reader.result.replace('data:', '').replace(/^.+,/, '');
       // store file
       localStorage.setItem('userImage', base64String);
-      // display image
-      navProfIcon.style.backgroundImage = `url(data:image/png;base64,${base64String})`;
-      menuProfIcon.style.backgroundImage = `url(data:image/png;base64,${base64String})`;
     };
     reader.readAsDataURL(file);
 });
-
-    navProfIcon.style.backgroundImage = `url(data:image/png;base64,${localStorage['userImage']})`;
-    menuProfIcon.style.backgroundImage = `url(data:image/png;base64,${localStorage['userImage']})`;
 
 // Reveal Effect Area Control
 
